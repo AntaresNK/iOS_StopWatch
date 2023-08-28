@@ -255,7 +255,7 @@ class ViewController: UIViewController {
         }
                 isTimeRunning = true
     }
-    
+    //counter of timer
     @objc func countTimer() {
         time -= 1
         clockfaceLabel.text = timeToString(timeSec: time)
@@ -266,7 +266,7 @@ class ViewController: UIViewController {
             clean()
         }
     }
-    
+    //counter of stopwatch
     @objc func countStopwatch() {
         time += 1
         clockfaceLabel.text = timeToString(timeSec: time)
