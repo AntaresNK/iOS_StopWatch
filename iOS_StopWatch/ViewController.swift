@@ -110,20 +110,20 @@ class ViewController: UIViewController {
             timerImageView.heightAnchor.constraint(equalToConstant: 70)
         ])
         
-        // segmented control
+        //segmented control
         NSLayoutConstraint.activate([
             timerStopwatchSegmet.topAnchor.constraint(equalTo: timerImageView.bottomAnchor, constant: 10),
             timerStopwatchSegmet.centerXAnchor.constraint(equalTo: timerImageView.centerXAnchor)
         ])
         
-        // clockface label
+        //clockface label
         NSLayoutConstraint.activate([
             clockfaceLabel.topAnchor.constraint(equalTo: timerStopwatchSegmet.bottomAnchor, constant: 45),
             clockfaceLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 45),
             clockfaceLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -45)
         ])
         
-        // time picker
+        //time picker
         NSLayoutConstraint.activate([
             pickerView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
             pickerView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
@@ -132,7 +132,7 @@ class ViewController: UIViewController {
             pickerView.heightAnchor.constraint(equalToConstant: 170)
         ])
         
-        // stop button
+        //stop button
         NSLayoutConstraint.activate([
             stopButton.topAnchor.constraint(equalTo: pickerView.bottomAnchor, constant: 80),
             stopButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 70),
